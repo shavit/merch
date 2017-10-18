@@ -1,0 +1,284 @@
+/*
+Theme Name: merch
+Description:
+Version: 1.0
+License:
+Tags:
+*/
+
+//
+//  Variables
+//  HTML Elements
+//  Layout
+//  Forms
+//  Header
+//    Navigation
+//  Content
+//    List
+//    Detail
+//  Footer
+//
+
+@import url("https://fonts.googleapis.com/css?family=Martel:200,300,600");
+
+$fontSize: 16px;
+$colorPrimary: #c1b497;
+$colorDark: #25211e;
+$colorDarkMuted: #999;
+
+body{
+  color: #161616;
+  font-family: "Martel", sans-serif;
+  font-size: $fontSize;
+  font-weight: 300;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+
+  &.full-width{
+    width: 100%
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 200;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 64em;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+
+  .columns {
+    display: block;
+
+    &.four{
+      width: 25%;
+    }
+  }
+}
+
+.btn-primary{
+  background-color: $colorPrimary;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.75em 1.5em;
+
+  &:hover{
+    background-color: lighten($colorPrimary, 4);
+  }
+}
+
+#header{
+  background-color: $colorDark;
+  display: block;
+  height: 120px;
+  position: relative;
+
+  .logo{
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    font-weight: lighter;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    top: 24px;
+    margin: 0 auto;
+    position: relative;
+    width: 160px;
+  }
+
+  .menu{
+    display: block;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    top: 34px;
+
+    a{
+      color: #fff;
+    }
+
+    li{
+      display: inline-block;
+      margin: 0 2em;
+      position: relative;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      .sub-menu{
+        background: #fff;
+        // display: none;
+        padding: 1em 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+
+        a{
+          color: #333;
+        }
+      }
+
+      &:hover{
+        .sub-menu{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+}
+
+.hero{
+  border: 1em solid #fff;
+  height: 340px;
+  overflow: hidden;
+  padding: 1em;
+  position: relative;
+
+  img{
+    filter: brightness(0.9);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .headline,
+  .tagline{
+    color: #fff;
+    line-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+    position: relative;
+
+    &.headline{
+      top: 38%;
+    }
+    &.tagline{
+      top: 38%;
+    }
+  }
+}
+
+#content {
+
+  .body{
+    max-width: 580px;
+  }
+
+  .products{
+    .product{
+      float: left;
+      width: 25%;
+
+      .caption{
+        text-align: center;
+        padding: 0.25em 1.75em;
+      }
+      a{
+        color: inherit;
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+      }
+      .price{
+        color: $colorDarkMuted;
+      }
+    }
+  }
+
+  .product {
+
+    .name{
+      font-size: 1.5em;
+      line-height: 1em;
+      margin: 0;
+    }
+
+    &.detail{
+      margin: 0 280px 0 0;
+
+      figure{
+        margin: 0;
+      }
+    }
+
+    &.meta{
+      background: #efefef;
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding: 1em;
+      position: fixed;
+      right: 4vw;
+      top: 526px;
+      width: 340px;
+
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.pagination {
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center;
+
+  span,
+  a{
+    margin: 0.25em 0.75em;
+  }
+  a{
+    color: $colorDarkMuted;
+  }
+}
+
+#footer{
+  background-color: $colorDark;
+  font-size: 0.9em;
+  margin-top: 8em;
+  padding: 4em 2em;
+
+  .title{
+    color: #fff;
+  }
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li{
+      a {
+        color: $colorDarkMuted;
+      }
+    }
+  }
+}

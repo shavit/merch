@@ -1,0 +1,178 @@
+/*
+Theme Name: merch
+Description:
+Version: 1.0
+License:
+Tags:
+*/
+@import url("https://fonts.googleapis.com/css?family=Martel:200,300,600");
+body {
+  color: #161616;
+  font-family: "Martel", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+img.full-width {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200; }
+
+.wrap {
+  margin: 0 auto;
+  max-width: 64em; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row; }
+.row .columns {
+  display: block; }
+.row .columns.four {
+  width: 25%; }
+
+.btn-primary {
+  background-color: #c1b497;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.75em 1.5em; }
+.btn-primary:hover {
+  background-color: #c9bda4; }
+
+#header {
+  background-color: #25211e;
+  display: block;
+  height: 120px;
+  position: relative; }
+#header .logo {
+  color: #fff;
+  display: block;
+  font-size: 2em;
+  font-weight: lighter;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  top: 24px;
+  margin: 0 auto;
+  position: relative;
+  width: 160px; }
+#header .menu {
+  display: block;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  top: 34px; }
+#header .menu a {
+  color: #fff; }
+#header .menu li {
+  display: inline-block;
+  margin: 0 2em;
+  position: relative;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: 600; }
+#header .menu li .sub-menu {
+  background: #fff;
+  padding: 1em 0;
+  position: absolute;
+  top: 100%;
+  width: 100%; }
+#header .menu li .sub-menu a {
+  color: #333; }
+#header .menu li:hover .sub-menu {
+  display: block; }
+
+nav a {
+  text-decoration: none; }
+nav a:hover {
+  color: #c1b497; }
+
+.hero {
+  border: 1em solid #fff;
+  height: 340px;
+  overflow: hidden;
+  padding: 1em;
+  position: relative; }
+.hero img {
+  filter: brightness(0.9);
+  left: 0;
+  position: absolute;
+  top: 0; }
+.hero .headline, .hero .tagline {
+  color: #fff;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  position: relative; }
+.hero .headline.headline, .hero .tagline.headline {
+  top: 38%; }
+.hero .headline.tagline, .hero .tagline.tagline {
+  top: 38%; }
+
+#content .body {
+  max-width: 580px; }
+#content .products .product {
+  float: left;
+  width: 25%; }
+#content .products .product .caption {
+  text-align: center;
+  padding: 0.25em 1.75em; }
+#content .products .product a {
+  color: inherit;
+  display: block;
+  font-size: 13px;
+  text-decoration: none; }
+#content .products .product .price {
+  color: #999; }
+#content .product .name {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: 0; }
+#content .product.detail {
+  margin: 0 280px 0 0; }
+#content .product.detail figure {
+  margin: 0; }
+#content .product.meta {
+  background: #efefef;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 1em;
+  position: fixed;
+  right: 4vw;
+  top: 526px;
+  width: 340px; }
+#content .product.meta .btn {
+  width: 100%; }
+
+.pagination {
+  margin: 2em auto;
+  padding: 1em;
+  text-align: center; }
+.pagination span, .pagination a {
+  margin: 0.25em 0.75em; }
+.pagination a {
+  color: #999; }
+
+#footer {
+  background-color: #25211e;
+  font-size: 0.9em;
+  margin-top: 8em;
+  padding: 4em 2em; }
+#footer .title {
+  color: #fff; }
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+#footer ul li a {
+  color: #999; }
